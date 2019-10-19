@@ -1,9 +1,42 @@
 {
     "HEADER": {
    
-        "TITLE": "Knjiga recepata",
-        "AUTH": "Verifikacija",
-        "ShoppingList": "Lista za kupovinu"
+        "Title": "Knjiga recepata",
+        "Auth": "Verifikacija",
+        "ShoppingList": "Lista za kupovinu",
+        "Recipes": "Recepti",
+        "LogOut": "Izloguj se",
+        "Manage": "Uredi",
+        "Save": "Sačuvaj",
+        "Fetch": "Preuzmi"
+    },
+    "AUTH": {
+        "Password": "Lozinka",
+        "Login": "Logovanje",
+        "SignUp": "Registracija",
+        "SignUpP": "Registraciju",
+        "Switch": "Predji na"
+    },
+    "SHOPPING": {
+        "Amount": "Količina",
+        "Clear": "Poništi"
+    },
+    "RECIPE": {
+        "Select": "Molimo odaberite recept",
+        "New": "Novi recept",
+        "AddToList": "Dodaj sastojke na spisak",
+        "Manage": "Uredi recept",
+        "Save": "Sačuvaj",
+        "Url": "Putanja do slike",
+        "Desc": "Opis",
+        "Cancel": "Odustani",
+        "AddIng": "Dodaj sastojak"
+
+    },
+    "Add": "Dodaj",
+    "Name": "Naziv",
+    "Remove": "Obriši",
+    "Edit": "Izmeni"
     }
 
 
