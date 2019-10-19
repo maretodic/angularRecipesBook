@@ -3,7 +3,7 @@
         <form (ngSubmit) = "onAddItem(f)" #f="ngForm">
             <div class="form-row">
                 <div class="col-sm-5 form-group">
-                    <label for="name">Name</label>
+                    <label for="name">{{"SHOPPING.Name" | translate}}</label>
                     <input type="text" id="name" class="form-control"
                     name="name"
                     ngModel
@@ -11,7 +11,7 @@
                     >
                 </div>
                 <div class="col-sm-2 form-group">
-                    <label for="amount">Amount</label>
+                    <label for="amount">{{"SHOPPING.Amount" | translate}}</label>
                     <input type="number" id="amount" class="form-control"   
                     name="amount"
                     ngModel
@@ -23,12 +23,12 @@
             <div class="form-row">
                 <div class="col">
                     <button class="btn btn-success mr-1" type="submit" [disabled]='!f.valid'
-                    >{{ editMode ? 'Update' : 'Add' }}</button>
+                    >{{ (editMode ? "SHOPPING.Update" : "SHOPPING.Add") | translate }}</button>
                     <button class="btn btn-danger mr-1" type="button" 
                     (click)="onDelete()"
                     *ngIf="editMode"
-                    >Remove</button>
-                    <button class="btn btn-primary mr-1" type="button" (click)="onClear()">Clear</button>
+                    >{{"SHOPPING.Remove" | translate}}</button>
+                    <button class="btn btn-primary mr-1" type="button" (click)="onClear()">{{"SHOPPING.Clear" | translate}}</button>
                 </div>
             </div>
         </form>
