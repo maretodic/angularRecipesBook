@@ -3,7 +3,7 @@
         <form (ngSubmit) = "onAddItem(f)" #f="ngForm">
             <div class="form-row">
                 <div class="col-sm-5 form-group">
-                    <label for="name" i18n="@@Name">Name</label>
+                    <label for="name">Name</label>
                     <input type="text" id="name" class="form-control"
                     name="name"
                     ngModel
@@ -11,7 +11,7 @@
                     >
                 </div>
                 <div class="col-sm-2 form-group">
-                    <label for="amount" i18n="@@Amount">Amount</label>
+                    <label for="amount">Amount</label>
                     <input type="number" id="amount" class="form-control"   
                     name="amount"
                     ngModel
@@ -22,14 +22,13 @@
             </div>
             <div class="form-row">
                 <div class="col">
-                    <button class="btn btn-success mr-1" type="submit" [disabled]='!f.valid' i18n="@@AddIng"
+                    <button class="btn btn-success mr-1" type="submit" [disabled]='!f.valid'
                     >{{ editMode ? 'Update' : 'Add' }}</button>
                     <button class="btn btn-danger mr-1" type="button" 
                     (click)="onDelete()"
                     *ngIf="editMode"
-                    i18n="@@Remove"
                     >Remove</button>
-                    <button class="btn btn-primary mr-1" type="button" (click)="onClear()" i18n="@@Clear">Clear</button>
+                    <button class="btn btn-primary mr-1" type="button" (click)="onClear()">Clear</button>
                 </div>
             </div>
         </form>
