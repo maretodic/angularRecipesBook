@@ -1,3 +1,9 @@
+# Angular Recipes Book app
+
+This project is based on Udemy Angular, complete guide course. It has two features: recipes book and shopping list. App uses Firebase as backend and requires authentication to fetch and save recipes to database. It is deployed at firebase: https://ngkuvar21.firebaseapp.com/
+Use this user for testing, email: marko@marko.com, password: 123123;
+App also has multilanguage support (English and Serbian so far) using ngx-translate.
+
 # KuvarApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
