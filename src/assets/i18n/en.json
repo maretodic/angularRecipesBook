@@ -1,0 +1,15 @@
+{
+    "HEADER": {
+   
+        "TITLE": "Recipe Book",
+        "AUTH": "Authentication",
+        "ShoppingList": "Shopping List",
+        "RECIPES": "Recipes",
+        "LogOut": "Log Out",
+        "Manage": "Manage",
+        "Save": "Save",
+        "Fetch": "Fetch"
+    }
+
+
+}
