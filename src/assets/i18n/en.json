@@ -1,15 +1,42 @@
 {
     "HEADER": {
    
-        "TITLE": "Recipe Book",
-        "AUTH": "Authentication",
+        "Title": "Recipe Book",
+        "Auth": "Authentication",
         "ShoppingList": "Shopping List",
-        "RECIPES": "Recipes",
+        "Recipes": "Recipes",
         "LogOut": "Log Out",
         "Manage": "Manage",
         "Save": "Save",
         "Fetch": "Fetch"
-    }
+    },
+    "AUTH": {
+        "Password": "Password",
+        "Login": "Login",
+        "SignUp": "Sign up",
+        "SignUpP": "Sign up",
+        "Switch": "Switch to"
+    },
+    "SHOPPING": {
+        "Amount": "Amount",
+        "Clear": "Cancel"
+    },
+    "RECIPE": {
+        "Select": "Please select a recipe",
+        "New": "New recipe",
+        "AddToList": "Add ingredients to shopping list",
+        "Manage": "Manage recipe",
+        "Save": "Save",
+        "Url": "Image URL",
+        "Desc": "Description",
+        "Cancel": "Cancel",
+        "AddIng": "Add ingredient"
+
+    },
+    "Add": "Add",
+    "Name": "Name",
+    "Remove": "Remove",
+    "Edit": "Edit"
 
 
 }
