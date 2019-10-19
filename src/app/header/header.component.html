@@ -12,12 +12,12 @@
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
-                <!-- <li class="nav-item"><a href="" (click)="changeLang('sr')" class="nav-link">
+                <li class="nav-item"><a (click)="changeLang('sr')" class="nav-link">
                     <img src="assets/img/icon_flag_serbia.png" alt="serbian">
                 </a></li>
-                <li class="nav-item"><a href="" (click)="changeLang('en')" class="nav-link">
+                <li class="nav-item"><a (click)="changeLang('en')" class="nav-link">
                     <img src="assets/img/icon_flag_united_kingdom.png" alt="english">
-                </a></li> -->
+                </a></li>
                 <li class="nav-item" routerLinkActive="active" *ngIf="isAuth">
                     <a class="nav-link" routerLink="/recipes">Recipes</a></li>
                 <li class="nav-item" routerLinkActive="active" *ngIf="!isAuth">
