@@ -6,14 +6,14 @@
                     <button type="submit" 
                     class="btn btn-success mr-2"
                     [disabled]="!recipeForm.valid"
-                    >Save</button>
-                    <button type="button" class="btn btn-danger" (click)="onCancel()">Cancel</button>
+                    >{{"RECIPE.Save" | translate}}</button>
+                    <button type="button" class="btn btn-danger" (click)="onCancel()">{{"RECIPE.Cancel" | translate}}</button>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <div class="form-group">
-                        <label for="name">Name</label>
+                        <label for="name">{{"Name" | translate}}</label>
                         <input type="text" formControlName="name" class="form-control" id="name">
                     </div>
                 </div>
@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col">
                     <div class="form-group">
-                        <label for="imagePath">Image URL</label>
+                        <label for="imagePath">{{"RECIPE.Url" | translate}}</label>
                         <input type="text" formControlName="imagePath" 
                         class="form-control" id="imagePath" #imagePath> 
                     </div>
@@ -35,7 +35,7 @@
             <div class="row">
                 <div class="col">
                     <div class="form-group">
-                        <label for="description">Description</label>
+                        <label for="description">{{"RECIPE.Desc" | translate}}</label>
                         <textarea type="text" formControlName="description" class="form-control" id="description" rows="6"></textarea>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                     <div class="row">
                         <div class="col">
                             <button type="button" class="btn btn-success" (click)="onAddIng()"
-                            >Add Ingredient</button>
+                            >{{"RECIPE.AddIng" | translate}}</button>
                         </div>
                     </div>
                 </div>
