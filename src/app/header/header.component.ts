@@ -50,8 +50,5 @@ export class HeaderComponent implements OnInit, OnDestroy{
 
     changeLang(value: string) {
         this.translate.use('sr');
-        // this.translate.resetLang('sr');
-        // this.translate.reloadLang('sr');
-        // localStorage.setItem('language', 'sr');
     }
 }
