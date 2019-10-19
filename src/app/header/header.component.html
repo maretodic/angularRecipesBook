@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md bg-light navbar-light">
     <div class="container-fluid">
-            <a routerLink="/" class="navbar-brand">Recipe Book</a>
+            <a routerLink="/" class="navbar-brand">{{"HEADER.Title"| translate}}</a>
             <button class="navbar-toggler" 
                     type="button" 
                     data-toggle="collapse"
@@ -19,14 +19,14 @@
                     <img src="assets/img/icon_flag_united_kingdom.png" alt="english">
                 </a></li>
                 <li class="nav-item" routerLinkActive="active" *ngIf="isAuth">
-                    <a class="nav-link" routerLink="/recipes">Recipes</a></li>
+                    <a class="nav-link" routerLink="/recipes">{{"HEADER.Recipes" | translate}}</a></li>
                 <li class="nav-item" routerLinkActive="active" *ngIf="!isAuth">
-                    <a class="nav-link" routerLink="/auth">Authentication</a></li>
+                    <a class="nav-link" routerLink="/auth">{{"HEADER.Auth" | translate}}</a></li>
                 <li class="nav-item" routerLinkActive="active">
-                    <a class="nav-link" routerLink="/shopping-list">Shopping List</a></li>
+                    <a class="nav-link" routerLink="/shopping-list">{{"HEADER.ShoppingList" | translate}}</a></li>
             </ul>
             <ul class="navbar-nav mr-5" *ngIf="isAuth">
-                <li class="dropdown-item py-0" ><a class="nav-link" (click)="onLogOut()">Log Out</a></li>
+                <li class="dropdown-item py-0" ><a class="nav-link" (click)="onLogOut()">{{"HEADER.LogOut" | translate}}</a></li>
                 <li class="nav-item dropdown">
                     <a style="cursor: pointer" 
                         class="nav-link dropdown-toggle"
@@ -36,13 +36,13 @@
                         aria-haspopup="true"
                         aria-expanded="false" 
                         appDropdown
-                        role="button" >Manage<span class="caret"></span>
+                        role="button">{{"HEADER.Manage" | translate}}<span class="caret"></span>
                     </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li class="dropdown-item"><a class="nav-link" style="cursor: pointer" (click)="onSaveData()" i18n="@@Save">
-                                Save</a></li>
-                            <li class="dropdown-item"><a class="nav-link" style="cursor: pointer" (click)="onFetchData()" i18n="@@Fetch">
-                                Fetch</a></li>
+                            <li class="dropdown-item"><a class="nav-link" style="cursor: pointer" (click)="onSaveData()">
+                                {{"HEADER.Save" | translate}}</a></li>
+                            <li class="dropdown-item"><a class="nav-link" style="cursor: pointer" (click)="onFetchData()">
+                                {{"HEADER.Fetch" | translate}}</a></li>
                         </ul>
                 </li>
             </ul>
